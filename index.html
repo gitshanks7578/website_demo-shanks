@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project 3</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+</head>
+<body>
+    
+<nav>
+    <div class="sidebar">
+        <a href="#page1" class="active" onclick="setActive(this)">
+            <i class="ri-user-line"></i>
+        </a>
+        <a href="#page2" onclick="setActive(this)">
+            <i class="ri-folder-line"></i>
+        </a>
+        <a href="#page3" onclick="setActive(this)">
+            <i class="ri-service-line"></i>
+        </a>
+        <a href="#page4" onclick="setActive(this)">
+            <i class="ri-contacts-line"></i>
+        </a>
+        <a onclick="icon_move(),darkmode(),setActive(this)">
+            <i id="moon" class="ri-moon-line"></i>
+            <i id="sun" class="ri-sun-line hide"></i>
+        </a>
+    </div>
+</nav>
+
+<section id="page1">
+    <div class="sec sec1">
+        <div class="sec1_pt sec1_pt1">
+            <div class="name">
+                <div class="circle"></div>
+                <h3>Jones Smith</h3>
+            </div>
+            
+            <p>23 year old web designer passionate about web designs and work regarding that
+           you may download my CV from here</p>
+            <a href="CV.pdf" download class="cv_btn">download CV</a>
+        </div>
+        <div class="sec1_pt sec1_pt2">
+            <h3>Skills</h3>
+            <div class="skill_icon">
+                <i class="fa-brands fa-html5" style="color: #ff7300;"></i>
+                <i class="fa-brands fa-css3-alt" style="color: #74C0FC;"></i>
+                <i class="fa-brands fa-js" style="color: #FFD43B;"></i>
+                <i class="fa-brands fa-react" style="color: #74C0FC;"></i>
+                <i class="fa-brands fa-node-js" style="color: #44c200;"></i>
+                <i class="fa-brands fa-figma" style="color: #0091ff;"></i>
+                <i class="fa-solid fa-server" style="color: #ffffff;"></i>
+            </div>
+            <div class="skill_text">
+                <p>check out the projects done by using the mentioned the technologies</p>
+            </div>
+        </div>
+    </div>
+    <div class="sec sec2">
+        <img src="https://images.pexels.com/photos/839011/pexels-photo-839011.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="img">
+        <div class="sec2_intro">
+            <h1>Jones Smith</h1>
+            <div class="sec2btns">
+                <a href="#page2" class="sec2_btn sec2_btn1">projects</a>
+                <a href="#page3" class="sec2_btn sec2_btn2">services</a>
+            </div>
+        </div>
+       <div class="sec2_sec3pt">
+            <div class="txt">
+                <span>WORK </span>
+                <br>
+                <span>AND</span>
+                <br>
+                <span>THINK</span>
+                <br>
+                <span class="red">PROFESSIONAL</span>
+            </div>
+            <div class="info">
+                <p>3 years web devolpment and web design experience as a freelancer located in california</p>
+                <!-- <p class="ctext">connect with me</p> -->
+                <div class="link">
+                    <a href="#page4" class="sec3_btn">contact me</a>
+                </div>
+               
+            </div>
+       </div>
+      
+    </div>
+    <div class="sec sec3">
+        <h4>Web Developer and Designer</h4>
+        <p>3 years and web devolpment experience as a freelancer located in california</p>
+        <h4>My Socials</h4>
+        <div class="social_icons">
+            <a href="https://www.linkedin.com/" class="icon">
+                <i class="ri-linkedin-fill"></i>
+            </a>
+            <a href="https://www.instagram.com/" class="icon">
+                <i class="ri-instagram-line"></i>
+            </a>
+            <a href="https://www.facebook.com/" class="icon">
+                <i class="ri-facebook-circle-line"></i>
+            </a>
+        </div>
+        <div class="image">
+           <img src="https://static.abbeglasses.com/upload/operationImgs/1688454147871.jpg" alt="">
+        </div>
+       <p class="ctext">connect with me</p>
+        <a href="#page4" class="sec3_btn">contact me</a>
+    </div>
+</section>
+
+
+<section id="page2">
+    <h1>PROJECTS</h1>
+    <div class="projects_grid">
+        <div class="card card1">
+            <div class="card_img">
+                <img src="https://i.pinimg.com/736x/56/51/34/5651343b2dcda1e5fc903bd1764650b6.jpg" alt="">
+            </div>
+        
+            <h3>food website</h3>
+            <p>short description of the project made</p>
+            <div class="project_icons">
+                <i class="fa-brands fa-react" style="color: #29a2ff;"></i>
+                <i class="fa-brands fa-php" style="color: #99a2b2;"></i>
+                <i class="fa-brands fa-node-js" style="color: #0cb300;"></i>
+            </div>
+            <a href="#">
+                <i class="fa-solid fa-link"></i>
+                <span>visit project</span>
+            </a>
+        </div>
+        <div class="card card2">
+            <div class="card_img">
+                <img src="https://wallpapersok.com/images/hd/focused-photography-of-coffee-on-laptop-10xxzc9vydpxapop.jpg" alt="">
+            </div>
+            <h3>food website</h3>
+            <p>short description of the project made</p>
+            <div class="project_icons">
+                <i class="fa-brands fa-html5" style="color: #ff7300;"></i>
+                <i class="fa-brands fa-css3-alt" style="color: #74C0FC;"></i>
+                <i class="fa-brands fa-js" style="color: #FFD43B;"></i>
+            </div>
+            <a href="#">
+                <i class="fa-solid fa-link"></i>
+                <span>visit project</span>
+            </a>
+        </div>
+        <div class="card card3">
+            <div class="card_img">
+                <img src="https://c4.wallpaperflare.com/wallpaper/824/232/856/coffee-desk-laptop-notepad-wallpaper-preview.jpg" alt="">
+            </div>
+            <h3>food website</h3>
+            <p>short description of the project made</p>
+            <div class="project_icons">
+                <i class="fa-brands fa-figma" style="color: #0091ff;"></i>
+                <i class="fa-solid fa-server" style="color: #818181;"></i>
+                <i class="fa-brands fa-node-js" style="color: #0cb300;"></i>
+            </div>
+            <a href="#">
+                <i class="fa-solid fa-link"></i>
+                <span>visit project</span>
+            </a>
+        </div>
+        <div class="card card4">
+            <div class="card_img">
+                <img src="https://w0.peakpx.com/wallpaper/305/529/HD-wallpaper-cup-coffee-books-pen-laptop.jpg" alt="">
+            </div>
+            <h3>food website</h3>
+            <p>short description of the project made</p>
+            <div class="project_icons">
+                <i class="fa-brands fa-css3-alt" style="color: #74C0FC;"></i>
+                <i class="fa-brands fa-js" style="color: #FFD43B;"></i>
+                <i class="fa-brands fa-node-js" style="color: #0cb300;"></i>
+            </div>
+            <a href="#">
+                <i class="fa-solid fa-link"></i>
+                <span>visit project</span>
+            </a>
+        </div>
+        <div class="card card5">
+            <div class="card_img">
+                <img src="https://as1.ftcdn.net/jpg/03/42/82/80/1000_F_342828046_9DLqCS0Uy1fwhfNVxs1SD8vzaERjEcyE.jpg" alt="">
+            </div>
+            <h3>food website</h3>
+            <p>short description of the project made</p>
+            <div class="project_icons">
+                <i class="fa-brands fa-react" style="color: #29a2ff;"></i>
+                <i class="fa-brands fa-php" style="color: #99a2b2;"></i>
+                <i class="fa-brands fa-node-js" style="color: #0cb300;"></i>
+            </div>
+            <a href="#">
+                <i class="fa-solid fa-link"></i>
+                <span>visit project</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="page3">
+    <h1>SERVICES</h1>
+    <div class="pg3_cards">
+        <div class="pg3card pg3card1">
+            <div class="design">
+                <i class="ri-code-s-slash-line"></i>
+                <div class="pg3circle"></div>
+            </div>
+          
+            <div class="pg3txt">
+                <h2>Web Dev for websites</h2>
+                <p>short description of the service you offer and experience</p>
+            </div>
+          
+        </div>
+        <div class="pg3card pg3card2">
+            <div class="design">
+                <i class="ri-pen-nib-line"></i>
+                <div class="pg3circle"></div>
+            </div>
+         <div class="pg3txt">
+            <h2>Web Design and figma</h2>
+            <p>short description of the service you offer and experience</p>
+         </div>
+           
+        </div>
+        <div class="pg3card pg3card3">
+            <div class="design">
+                <i class="ri-search-line"></i>
+                <div class="pg3circle"></div>
+            </div>
+            <div class="pg3txt">
+                <h2>SEO and web search</h2>
+                <p>short description of the service you offer and experience</p>
+            </div>
+        
+        </div>
+    </div>
+    <h1>EXPERIENCE</h1>
+    <div class="exp">
+        <h1 class="animate">Google</h1>
+        <div class="exp_dec animate">
+            <h3>short description of what value you added there</h3>
+            <h5>2020-2022</h5>
+        </div>
+        <h1 class="animate">adobe</h1>
+        <div class="exp_dec animate">
+            <h3>short description of what value you added there</h3>
+            <h5>2022-2023</h5>
+        </div>
+        <h1 class="animate">Nvidia</h1>
+        <div class="exp_dec animate">
+            <h3>short description of what value you added there</h3>
+            <h5>2024-present</h5>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="page4">
+    <h1>CONTACT ME</h1>
+<div class="form-container">
+        
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="17a62624-9563-4369-b216-6e2e8344d25e">
+     <div class="input-container">
+        <input name="name" type="text" id="name" placeholder="" required>
+        <label for="name">Full Name</label>
+    </div>
+   
+
+     <div class="input-container">
+         <input name="email" type="email" id="email" placeholder="" required>
+         <label for="email">Email Address</label>
+     </div>
+    <div class="input-container">
+        <input name="phone" type="phone" id="phone" placeholder=" " required>
+        <label for="phone">phone number</label>
+    </div>
+    <div class="input-container">
+        <input name="message" type="phone" id="phone" placeholder=" " required>
+        <label class="msg_text" for="message">message</label>
+    </div>
+    
+         <button class="btn">Submit</button>
+        </form>
+       
+</div>
+</section>
+
+<section class="footer">
+    <div class="footer_text">
+        <h1>JONES SMITH</h1>
+        <h3>email : xyz@gamil.com</h3>
+    </div>
+  
+    <div class="footer_icons">
+        <a href="https://www.linkedin.com/" class="footer_icon">
+            <i class="ri-linkedin-fill"></i>
+        </a>
+        <a href="https://www.instagram.com/" class="footer_icon">
+            <i class="ri-instagram-line"></i>
+        </a>
+        <a href="https://www.facebook.com/" class="footer_icon">
+            <i class="ri-facebook-circle-line"></i>
+        </a>
+    </div>
+</section>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curved Three-Section Page</title>
+    <style>
+        body {
+            margin: 0 50px;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+        }
+
+        .section {
+            flex: 1;
+            border-radius: 40px;
+            margin: 10px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .left-section {
+            flex: 0.8;
+            background-color: gray;
+            display: flex;
+            flex-direction: column;
+            height: 90vh;
+        }
+
+        .left-section .part1, .left-section .part2 {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .left-section .part1 {
+            background-color: lightgray;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+        }
+
+        .left-section .part2 {
+            background-color: darkgray;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+        }
+
+        .center-section {
+            flex: 1.2;
+            background-color: #555;
+            height: 95vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .right-section {
+            flex: 0.8;
+            background-color: #666;
+            height: 90vh;
+        }
+
+        .toggle-btn {
+            font-size: 24px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            outline: none;
+            color: white;
+        }
+
+        .moon-icon {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="section left-section">
+        <div class="part1">Section 1 - Part 1</div>
+        <div class="part2">Section 1 - Part 2</div>
+    </div>
+    
+    <div class="section center-section">
+        <button class="toggle-btn" onclick="toggleIcon()">
+            <span class="sun-icon">☀️</span>
+            <span class="moon-icon">🌙</span>
+        </button>
+    </div>
+    
+    <div class="section right-section">Right Section</div>
+
+    <script>
+        function toggleIcon() {
+            const sunIcon = document.querySelector('.sun-icon');
+            const moonIcon = document.querySelector('.moon-icon');
+
+            if (sunIcon.style.display === 'none') {
+                sunIcon.style.display = 'inline';
+                moonIcon.style.display = 'none';
+            } else {
+                sunIcon.style.display = 'none';
+                moonIcon.style.display = 'inline';
+            }
+        }
+    </script>
+
+</body>
+</html>
